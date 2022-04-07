@@ -1,16 +1,15 @@
 def birth(m):
   a=0
   b=1
-  print(" {:s}\n{:s}\n{:s}{:s}{:s}{:s}{:s}".format((22)*"_","|  Month |\tPairs  |","|",(8)*"-","|",(13)*"-","|"))
+  print(" {:s}\n{:s}\n{:s}{:s}{:s}{:s}{:s}".format((23)*"_","|  Month |\tPairs  |","|",(8)*"-","|",(14)*"-","|"))
   for i in range(m):
     temp=b
     b=a+b
     a=temp
-    e=str(a)
-    st=len(e)
     if(i==m-1):
-        print("{:s}{:d}{:s}{:s}{:s}{:d}{:s}{:s}\n {:s}".format("|  ",i+1,"\t"," |","\t",a,(6-(st-1))*" ","|",(22)*"-"))
+        print("{:s}{:d}{:s}{:s}{:s}{:d}{:s}{:s}".format("|  ",i+1,"\t"," |","\t",a,"\t","|"))
     else:
-        print("{:s}{:d}{:s}{:s}{:s}{:d}{:s}{:s}\n{:s}{:s}{:s}{:s}{:s}".format("|  ",i+1,"\t"," |","\t",a,(6-(st-1))*" ","|","|",(8)*"-","|",(13)*"-","|"))
+        print("{:s}{:d}{:s}{:s}{:s}{:d}{:s}{:s}\n{:s}{:s}{:s}{:s}{:s}".format("|  ",i+1,"\t"," |","\t",a,"\t","|","|",(8)*"-","|",(14)*"-","|"))
+  print("",(23)*"-")
 month=int(input("Enter the number of months : "))
 birth(month)
