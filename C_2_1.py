@@ -6,10 +6,11 @@ def birth(m):
     temp=b
     b=a+b
     a=temp
+    e=str(a)
+    st=len(e)
     if(i==m-1):
-        #need to make spacing in the column according to the digits of no of pairs
-        print("{:s}{:d}{:s}{:s}{:s}{:d}{:s}\n {:s}".format("|  ",i+1,"\t"," |","\t",a,"      |",(22)*"-"))
+        print("{:s}{:d}{:s}{:s}{:s}{:d}{:s}{:s}\n {:s}".format("|  ",i+1,"\t"," |","\t",a,(6-(st-1))*" ","|",(22)*"-"))
     else:
-        print("{:s}{:d}{:s}{:s}{:s}{:d}{:s}\n{:s}{:s}{:s}{:s}{:s}".format("|  ",i+1,"\t"," |","\t",a,"      |","|",(8)*"-","|",(13)*"-","|"))
+        print("{:s}{:d}{:s}{:s}{:s}{:d}{:s}{:s}\n{:s}{:s}{:s}{:s}{:s}".format("|  ",i+1,"\t"," |","\t",a,(6-(st-1))*" ","|","|",(8)*"-","|",(13)*"-","|"))
 month=int(input("Enter the number of months : "))
 birth(month)
