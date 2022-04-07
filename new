@@ -1,0 +1,12 @@
+﻿A=[3 2 -1;2 -2 4;-1 0.5 -1];
+b=[1 -2 0];
+A=[A b];
+U=A;
+[n,m]=size(A);
+for i=1:m-1
+    for j=i+1:n
+        k=U(j,i)/U(i,i);
+        U(j,:)=U(j,:)-k*U(i,:);
+    end
+end
+disp(U);
