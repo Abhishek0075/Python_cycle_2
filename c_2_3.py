@@ -39,7 +39,7 @@ vesi_sep=[]
 for i in range(len(vesi)):
     temp=((vesi[i]["sepalLength"])*(vesi[i]["sepalWidth"]))
     vesi_sep.append(temp)
-print("The maximum sepal area in Vesicolor : ",max(vesi_sep))
+print("The maximum sepal area in Versicolor : ",max(vesi_sep))
 
 #      Petal part max 
 
