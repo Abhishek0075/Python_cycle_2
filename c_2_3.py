@@ -66,7 +66,7 @@ vesi_pet=[]
 for i in range(len(vesi)):
     temp=((vesi[i]["petalLength"])*(vesi[i]["petalWidth"]))
     vesi_pet.append(temp)
-print("The minimum petal area in Vesicolor : ",min(vesi_pet))
+print("The minimum petal area in Versicolor : ",min(vesi_pet))
 
 #       Sorting
 
