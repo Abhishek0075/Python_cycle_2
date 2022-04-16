@@ -1,4 +1,4 @@
-s="1 2 3 4 4 9 7 7 1 2 5 6 7"
+s=str(input("Enter string of integers with spaces : "))
 print("{:s} {:s} {:s}".format("* The string of integers with space","=",s))
 s=s.split()
 l=[int(i) for i in s]
