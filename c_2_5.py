@@ -25,10 +25,11 @@ class cylinder(Shapes):
     self._volume=(22/7)*(self.__radius**2)*self.__height
 
 
-
-a=int(input("Enter the radius of cylinder : "))
-b=int(input("Enter the height of cylinder : "))
-c=int(input("Enter the radius of sphere : "))
+print("Enter dimensions of cylinder : ")
+a=int(input(">> Enter the radius of cylinder : "))
+b=int(input(">> Enter the height of cylinder : "))
+print("Enter dimensions of sphere : ")
+c=int(input(">> Enter the radius of sphere : "))
 c1=cylinder(a,b)
 s1=sphere(c)
 s1.cal_area()
