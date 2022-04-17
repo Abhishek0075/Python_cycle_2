@@ -1,4 +1,3 @@
-
 def rotate (s):
   print("{:s} {:s} {:s}".format("* The string of integers with space","=",s))
   s=s.split()

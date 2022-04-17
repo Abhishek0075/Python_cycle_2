@@ -1,4 +1,3 @@
-
 # setosa list
 def setosa(l):
     seto=[]

@@ -37,14 +37,29 @@ class Box:
         ratio=self.find_volume()/self.find_area()
         return ratio
 import random
+t=[]
+element=0
 max_no=int(input("Enter number of Boxes needed : "))
-t=[Box(random.randint(1,10),random.randint(1,10),random.randint(1,10)) for i in range (max_no)]
-area=[i.find_area() for i in t]
-volume=[i.find_volume() for i in t]
-ratio=[x//y for x,y in zip(area,volume)]
-location=ratio.index(max(ratio))
-print("The list of ratios of Boxes : ",t)
-print("Box with maximum ratio of area and volume : ")
-print("Area = ",area[location])
-print("Volume = ",volume[location])
-print("Ratio = ",max(ratio))
+while(element<max_no):
+    if(element<max_no):
+        t.append(Box(random.randrange(1,50,1)))
+        element=element+1
+    else:
+        break
+    if(element<max_no):
+        t.append(Box(random.randrange(1,50,1),random.randrange(1,50,1)))
+        element=element+1
+    else:
+        break
+    if(element<max_no):
+        t.append(Box(random.randrange(1,50,1),random.randrange(1,50,1),random.randrange(1,50,1)))
+        element=element+1
+    else:
+        break
+l=[]
+for i in t:
+ l.append(i.ratio())
+print("The list of ratios of Boxes : ",l)
+for i in range(element):
+ if(max(l)==t[i].ratio()):
+  t[i].details()

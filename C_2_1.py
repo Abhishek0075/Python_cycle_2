@@ -1,7 +1,7 @@
 def birth(m):
   a=0
   b=1
-  print(" {:s}\n{:s}\n{:s}{:s}{:s}{:s}{:s}".format((23)*"_","|  Month |\tPairs  |","|",(8)*"-","|",(14)*"-","|"))
+  print(" {:s}\n{:s}\n{:s}{:s}{:s}{:s}{:s}".format((23)*"_","|  Month |\tPairs   |","|",(8)*"-","|",(14)*"-","|"))
   for i in range(m):
     temp=b
     b=a+b
