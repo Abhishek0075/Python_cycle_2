@@ -104,9 +104,14 @@ l=f.read().splitlines()
 f.close()
 length=len(l)
 l=[eval(l[i].strip(",")) for i in range (1,length-1)]
+s_sep_max(l)
+vir_sep_max(l)
+v_sep_max(l)
+s_pet_min(l)
+vir_pet_min(l)
+v_pet_min(l)
 print("{:s}\n{:s}\n{:s}".format(len("Details of all flowers of species setosa : ")*"-","Details of all flowers of species setosa : ",len("Details of all flowers of species setosa : ")*"-"))
 print(setosa(l))
 print("{:s}\n{:s}\n{:s}".format(len("List of dictionaries according to total area of petal and sepal :")*"-","List of dictionaries according to total area of petal and sepal :",len("List of dictionaries according to total area of petal and sepal :")*"-"))
 print(area_sort(l))
-
 
